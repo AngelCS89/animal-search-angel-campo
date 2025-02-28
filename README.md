@@ -19,7 +19,6 @@ Animal Search is a web application built with React and TypeScript that allows y
 - [React 19](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
-- [Webpack](https://webpack.js.org/)
 - [React Router](https://reactrouter.com/)
 - [Jest and Testing Library](https://jestjs.io/)
 
