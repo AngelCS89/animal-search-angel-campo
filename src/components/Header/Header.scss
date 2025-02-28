@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    min-height: 40px;
+    padding: 5px;
+
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-grow: 1;
+
+        .search-input__group {
+            width: auto;
+        }
+
+        .search-input__field {
+            width: 70%;
+            max-width: 400px;
+        }
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 10px;
+        order: 1;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+}

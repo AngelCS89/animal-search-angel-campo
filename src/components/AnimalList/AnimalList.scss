@@ -1,0 +1,43 @@
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animal-list {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+
+  &__anchor {
+    color: #1a0dab;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  &__type {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}

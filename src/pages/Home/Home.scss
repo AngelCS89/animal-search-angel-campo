@@ -1,0 +1,13 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        width: 272px;
+        height: 92px;
+        margin-bottom: 20px;
+        margin-top: 200px;
+    }
+}
