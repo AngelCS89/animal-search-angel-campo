@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "./layout/Layout"
-import AppRoutes from "./Routes"
-import "./styles/global.scss"
+import React from "react";
+import Layout from "./layout/Layout";
+import AppRoutes from "./Routes";
+import "./styles/global.scss";
 
 
 const App: React.FC = () => {

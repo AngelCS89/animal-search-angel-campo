@@ -1,6 +1,6 @@
-import React from "react"
-import SearchInput from "../../components/SearchInput/SearchInput"
-import "./Home.scss"
+import React from "react";
+import SearchInput from "../../components/SearchInput/SearchInput";
+import "./Home.scss";
 
 const Home: React.FC = () => {
   return (
