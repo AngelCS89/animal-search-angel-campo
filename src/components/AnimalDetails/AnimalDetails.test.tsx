@@ -1,5 +1,6 @@
-import '@testing-library/jest-dom';
 import { render, screen, fireEvent } from "@testing-library/react";
+import { describe, it, expect, vi } from 'vitest';
+import '@testing-library/jest-dom';
 import AnimalDetails from "./AnimalDetails";
 import type { Animal } from "../../types";
 
@@ -13,7 +14,7 @@ describe("AnimalDetails", () => {
         type: "example",
     };
 
-    const mockOnClose = jest.fn();
+    const mockOnClose = vi.fn();
 
     it("renders animal details correctly", () => {
         render(<AnimalDetails animal={mockAnimal} onClose={mockOnClose} />);

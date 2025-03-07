@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom';
 import { render, screen, fireEvent } from "@testing-library/react";
+import { describe, it, expect, vi } from 'vitest';
 import AnimalList from "./AnimalList";
 import type { Animal } from "../../types";
 
@@ -25,7 +26,7 @@ const mockAnimals: Animal[] = [
 describe("AnimalList", () => {
   it("renders loading skeletons when loading is true", () => {
     const { container } = render(
-      <AnimalList animals={mockAnimals} onSelectAnimal={jest.fn()} loading={true} />
+      <AnimalList animals={mockAnimals} onSelectAnimal={vi.fn()} loading={true} />
     );
     expect(container.querySelectorAll(".results-skeleton-list__item")).toHaveLength(
       mockAnimals.length
@@ -34,14 +35,14 @@ describe("AnimalList", () => {
 
   it("renders animal list when loading is false", () => {
     render(
-      <AnimalList animals={mockAnimals} onSelectAnimal={jest.fn()} loading={false} />
+      <AnimalList animals={mockAnimals} onSelectAnimal={vi.fn()} loading={false} />
     );
     expect(screen.getByText("Animal 1")).toBeInTheDocument();
     expect(screen.getByText("Animal 2")).toBeInTheDocument();
   });
 
   it("calls onSelectAnimal when an animal is clicked", () => {
-    const onSelectAnimal = jest.fn();
+    const onSelectAnimal = vi.fn();
     render(
       <AnimalList animals={mockAnimals} onSelectAnimal={onSelectAnimal} loading={false} />
     );
